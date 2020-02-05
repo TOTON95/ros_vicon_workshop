@@ -1,5 +1,8 @@
 # ros_vicon_workshop
+
 Basic Vicon-ROS tutorial (Python/C++)
+
+![alt text](https://github.com/TOTON95/ros_vicon_workshop/blob/master/doc/overview.png "Vicon-ROS High Level Diagram")
 
 ## Dependencies
 
