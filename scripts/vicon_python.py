@@ -7,7 +7,15 @@ from geometry_msgs.msg import TransformStamped
 
 # Vicon callback
 def cb_vicon_data(data):
-    rospy.loginfo(rospy.get_name() + "\nX: %s \tY: %s \tZ: %s \nRX: %s \tRY: %s \tRZ: %s \nRW: %s",data.transform.translation.x, data.transform.translation.y, data.transform.translation.z, data.transform.rotation.x, data.transform.rotation.y, data.transform.rotation.z, data.transform.rotation.w)
+    x = data.transform.translation.x
+    y = data.transform.translation.y
+    z = data.transform.translation.z
+    rx = data.transform.rotation.x
+    ry = data.transform.rotation.y
+    rz = data.transform.rotation.z
+    rw = data.transform.rotation.w
+
+    rospy.loginfo(rospy.get_name() + "\nX: %s\tY: %s\tZ: %s\nRX: %s\tRY: %s\tRZ: %s\nRW: %s",x, y, z, rx, ry, rz, rw)
 
 # ROS node
 def vicon_sys():
