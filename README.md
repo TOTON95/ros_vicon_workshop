@@ -59,3 +59,7 @@ $ source devel/setup.bash
 ```sh
 $ rosrun vicon_workshop vicon_python.py
 ```
+#### Cpp
+```sh
+$ rosrun vicon_workshop vicon_workshop_node
+```
